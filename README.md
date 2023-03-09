@@ -3,9 +3,15 @@
 ## Array
 
 - [x] [Two Sum](https://leetcode.com/problems/two-sum/)
-
-
-
+    Use a Map to find difference and iterate 
+    ```
+           if (null != map.get(target - nums[i])
+                    && nums[map.get(target - nums[i])] + nums[i] == target) {
+                return new int[]{map.get(target - nums[i]), i};
+            } else {
+                map.put(nums[i], i);
+            }
+        
 - [x] [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 - [x] [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
 - [x] [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
